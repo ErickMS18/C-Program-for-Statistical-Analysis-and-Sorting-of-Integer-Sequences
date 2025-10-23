@@ -1,60 +1,83 @@
-# C-Program-for-Statistical-Analysis-and-Sorting-of-Integer-Sequences
+# Análise Estatística e Ordenação de Sequências de Números Inteiros
+## Descrição
 
-## Description
-This C program reads a set of numbers from a file (`dados.txt`), performs various statistical analyses, and generates different output files:
+Este programa em C lê um conjunto de números a partir de um arquivo (dados.txt), realiza diversas análises estatísticas e gera diferentes arquivos de saída:
 
-- `estatisticas.txt`: Contains the count of positive, negative, zero, even, and odd numbers.
-- `distintos.txt`: Stores the unique numbers from the input file.
-- `ordenado.txt`: Saves all numbers sorted in ascending order.
-- `distintos_ordenado.txt`: Stores only unique numbers sorted in ascending order.
+- estatisticas.txt: Contém a contagem de números positivos, negativos, zeros, pares e ímpares.
 
-## Features
-- Reads an input file and processes a maximum of 108 numbers.
-- Checks if the input file contains at least 30 numbers.
-- Performs statistical analysis on the numbers.
-- Implements a bubble sort algorithm to sort the numbers.
-- Saves the processed data in separate output files.
+- distintos.txt: Armazena os números únicos do arquivo de entrada.
 
-## Compilation and Execution
-1. Compile the program using GCC:
-   ```sh
-   gcc program.c -o program
-   ```
-2. Run the compiled program:
-   ```sh
-   ./program
-   ```
+- ordenado.txt: Salva todos os números em ordem crescente.
 
-## Input File Format (`dados.txt`)
-The input file should start with an integer indicating the number of values, followed by the list of integers:
-```
+- distintos_ordenado.txt: Armazena apenas os números únicos em ordem crescente.
+
+## Funcionalidades
+
+- Lê um arquivo de entrada e processa até 108 números.
+
+- Verifica se o arquivo contém pelo menos 30 números.
+
+- Realiza análise estatística sobre os números.
+
+- Implementa o algoritmo Bubble Sort para ordenação crescente.
+
+- Salva os dados processados em arquivos de saída separados.
+
+## Compilação e Execução
+
+1. Compile o programa utilizando o GCC:
+
+gcc program.c -o program
+
+
+2. Execute o programa compilado:
+
+./program
+
+## Formato do Arquivo de Entrada (dados.txt)
+
+O arquivo de entrada deve começar com um número inteiro indicando a quantidade de valores, seguido pela lista dos números inteiros:
+
 30
 12 -5 0 8 3 ...
-```
 
-## Error Handling
-- If the input file cannot be opened, an error message is displayed.
-- If the number of values exceeds 108, the program exits with an error.
-- If fewer than 30 numbers are provided, the program exits with an error.
-- Errors while creating output files result in an error message and program termination.
+## Tratamento de Erros
 
-## Sorting Algorithm
-The program uses the Bubble Sort algorithm to sort the numbers in ascending order.
+- Caso o arquivo de entrada não possa ser aberto, uma mensagem de erro será exibida.
 
-## Output Example
-After execution, the program generates the following files:
-- `estatisticas.txt`:
-  ```
-  Number of positive numbers: X
-  Number of negative numbers: Y
-  Number of zeros: Z
-  Number of even numbers: A
-  Number of odd numbers: B
-  ```
-- `distintos.txt`: `Unique numbers separated by spaces`
-- `ordenado.txt`: `Sorted numbers separated by spaces`
-- `distintos_ordenado.txt`: `Sorted unique numbers separated by spaces`
+- Se o número de valores exceder 108, o programa será encerrado com erro.
 
-## Notes
-Ensure the input file follows the correct format before execution to avoid errors.
+- Se forem fornecidos menos de 30 números, o programa também será encerrado com erro.
 
+- Erros ao criar arquivos de saída resultam em uma mensagem de erro e encerramento do programa.
+
+## Algoritmo de Ordenação
+
+O programa utiliza o algoritmo Bubble Sort para ordenar os números em ordem crescente.
+
+## Exemplo de Saída
+
+Após a execução, o programa gera os seguintes arquivos:
+
+- estatisticas.txt:
+
+   Quantidade de números positivos: X
+
+   Quantidade de números negativos: Y
+
+   Quantidade de zeros: Z
+
+   Quantidade de números pares: A
+
+   Quantidade de números ímpares: B
+
+
+- distintos.txt: Números únicos separados por espaços
+
+- ordenado.txt: Números ordenados separados por espaços
+
+- distintos_ordenado.txt: Números únicos ordenados separados por espaços
+
+## Observações
+
+Certifique-se de que o arquivo de entrada siga o formato correto antes da execução para evitar erros.
